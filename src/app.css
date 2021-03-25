@@ -1,0 +1,114 @@
+.screen {
+    display: grid;
+    grid-template-rows: 10fr 80fr 10fr;
+    grid-template-columns: 37fr 25fr 37fr;
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, rgba(241, 238, 233, 0.178), rgb(243, 220, 198));
+}
+
+.calculator {
+    grid-column: 2;
+    grid-row: 2;
+    border: 1px solid 548b81;
+    border-radius: 5%;
+    padding: 1em;
+    max-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #dbc59e;
+    box-shadow: 5px 6px 19px -2px rgba(0, 0, 0, 75);
+}
+
+.button {
+    display: grid;
+    margin: 0.5em;
+    place-items: center;
+    width: 2.5em;
+    height: 2.5em;
+    border: 1px solid #9d7753;
+    border-radius: 20%;
+    cursor: pointer;
+    background-color: #9d7753;
+    box-shadow: 2px 3px 10px -2px #000000bf;
+    color: #fff;
+    font-family:  'Roboto Slab', serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #70553c;
+    border: 1px solid #70553c;
+}
+
+.button:last-child {
+    background-color: #da7e32;
+    width: 5.3em;
+    height: 1em;
+    border: #da7e32;
+    border-radius: 5px;
+    color: #000;
+    font-size: 45px;
+    padding-bottom: 0.3em;
+    margin-top: 10px;
+}
+
+.button:last-child:hover {
+    background-color: #70553c;
+}
+
+.buttonsContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.display {
+    display: flex;
+    overflow: hidden;
+    justify-content: flex-end;
+    border: 1px solid #0e0d0b;
+    border-radius: 5px;
+    padding: 0.8em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    background-color: #0e0d0b;
+    box-shadow: 2px 3px 10px -2px #000000bf;
+    color: #40d6bb;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+@media only screen and (max-width: 914px) {
+    .screen {
+        grid-template-rows: 5fr 90fr 5fr;
+        grid-template-columns: 30fr 40fr 30fr;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .screen {
+        grid-template-rows: 10fr 80fr 10fr;
+        grid-template-columns: 5fr 90fr 5fr;
+        height: 100vh;
+        background-image: linear-gradient(to bottom right, rgba(241, 238, 233, 0.178), rgb(243, 220, 198));
+    }
+
+    .display {
+        font-size: 15px;
+    }
+
+    .button {
+        margin: 8px;
+    }
+
+    .button:last-child {
+        font-size: 30px;
+    }
+}
+
