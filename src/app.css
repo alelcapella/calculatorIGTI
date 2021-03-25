@@ -84,6 +84,19 @@
     font-size: 25px;
 }
 
+.clear .button {
+    width: 2.5em;
+    height: 2.5em;
+    border: #da7e32;
+    border-radius: 20%;
+    margin-top: 0.5em;
+    padding-bottom: 0;
+    background-color: #da7e32;
+    color: #000;
+    font-family:  'Roboto Slab', serif;
+    font-size: 19px;
+    font-weight: bold;
+}
 @media only screen and (max-width: 914px) {
     .screen {
         grid-template-rows: 5fr 90fr 5fr;

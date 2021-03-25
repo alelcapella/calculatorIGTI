@@ -79,7 +79,9 @@ class Calculator extends Component {
                     <Button display={"8"} onClick={() => this.putValue(8)} disabled={operator === 3} />
                     <Button display={"9"} onClick={() => this.putValue(9)} disabled={operator === 3} />
                     <Button display={"*"} onClick={() => this.pickOperation(3)} disabled={operator !== 1} />
-                    <Button display={"C"} onClick={() => this.clear()} />
+                    <row className="clear">
+                    <Button id="clear" display={"C"} onClick={() => this.clear()} />
+                    </row>
                     <Button display={"0"} onClick={() => this.putValue(0)} disabled={operator === 3} />
                     <Button display={"x²"} onClick={() => this.pickOperation(5)} disabled={operator !== 1} />
                     <Button display={"÷"} onClick={() => this.pickOperation(4)} disabled={operator !== 1} />
